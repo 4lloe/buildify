@@ -1,0 +1,351 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #19222c;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    color: white;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+}
+
+h3{
+    font-family: 'Roboto', sans-serif;  
+    font-size:18px;
+}
+
+/*Parent grid container*/
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 100px 1fr;
+    grid-template-areas:
+      'sidebar header'
+      'sidebar main';
+}
+
+/*Sidebar section*/
+.sidebar{
+    display: grid;
+    height: 98vh;
+    place-items: center;
+    grid-area: sidebar;
+    margin: 0.5rem;
+    border-radius: 1rem;
+    background-color: #646FFF;
+}
+
+/*Logo configuration*/
+.logo{
+    gap:5px;
+    padding: 40px 0;
+    display: flex;
+    color: white;
+}
+
+.logo img{
+    width: 20px;
+    height: 20px;
+    margin-top: 15px;
+}
+
+.logo h2{
+    margin: 10px 0;
+}
+
+.logo h2:hover{
+    margin: 10px 0;
+    transition: ease-in 0.3s;
+    font-size: 28px;
+}
+
+
+/*Sidebar menu*/
+.sidebar .menu ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar .menu ul li{
+    display: flex;
+    gap:10px;
+    padding: 10px 10px;
+}
+
+.sidebar .menu ul li:hover{
+
+    transition: ease-in 0.3s;
+    border-radius: 1rem;
+    background-color: #838AFC;
+}
+
+.sidebar .menu ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.sidebar img{
+    width: 20px;
+    height: 20px;
+
+}
+/*premium fetures*/
+.premium {
+    margin-top: 3rem;
+    max-width:150px;
+    background-color: #E9A8E9; /* Розовый фон */
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    width: 250px;
+}
+.premium img {
+    width: 30px;
+    height: 25px;
+}
+.premium h2 {
+    margin: 10px 0;
+    color: black;
+}
+.premium button {
+    background-color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    bottom: -15px; /* Половина кнопки выходит за контейнер */
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.premium button:hover {
+    transition: ease-in 0.3s;
+    background-color: #f3f3f3;
+}
+/*Logout section*/
+.logout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap:20px;
+}
+
+.logout h2{
+    margin: 10px 0;
+    font-size:20px;
+}
+
+.logout:hover{
+    transition: ease-in 0.3s;
+    border-radius: 1rem;
+    padding: 0 10px;
+    background-color: #838AFC;
+}
+/*Header section*/
+.header{
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 0.7fr 2fr 0.2fr 0.7fr;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    border-radius: 1rem;
+    background-color: #09101A;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header h1{
+    margin-left: 1rem;
+}
+
+.search-container{
+    display: grid;
+    grid-template-columns: 0.4fr 5fr 1fr;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #21273a;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 1rem 2rem;
+}
+
+.search-container img{
+    margin-left: 1rem;
+}
+
+.search-container input[type=text]{
+    font-size: 17px;
+    border: none;
+    color: white;
+    background-color: #21273a;
+    margin: 0 1rem;;
+}   
+
+.shortcut{
+    font-size: 17px;
+    color: white;
+    background-color: #2f344d ;
+    padding: 5px;
+    border-radius: 4px;
+    margin-right: 1rem;
+}
+
+.notifications{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    background-color: #21273a;
+    padding: 0 0.6rem;
+    margin:1rem 1rem 1rem 0;    
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.notifications:hover{
+    transition: ease-in 0.3s;
+    padding: 0 10px;
+    background-color: #313953;
+}
+
+
+.user-card{
+    display: flex;
+    align-self:center;
+    margin-left: 1rem;
+}
+
+.user-info{
+    color:white;
+    display: flex;
+    flex-direction: column;
+    margin:0.5rem 1rem;
+}
+
+
+
+
+/*Main section*/
+.main {
+    grid-area: main;
+    margin: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 колонки */
+    grid-template-rows: auto;
+    gap: 10px;
+    
+    grid-template-areas:
+        "total-balance total-balance small2 tall1"
+        "wide1  wide1  wide1  tall1"
+        "wide2  wide2  wide2  tall2";
+}
+
+.box {
+    background: rgb(73, 72, 72);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    min-height: 80px;
+}
+
+.total-balance { 
+    grid-area: total-balance; min-height: 120px; 
+    background-color: #09101A;
+    font-family: Roboto, sans-serif;
+    color: white;
+    padding: 20px;  /* Отступ внутри контейнера */
+    box-sizing: border-box;
+} 
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.dropdown {
+    display: flex;
+    background: #222;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+    text-decoration: none;
+}
+
+.balance {
+    font-size: 34px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.info {
+    margin-top:-3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.income, .expense {
+    margin-top:3.5rem;
+    flex-direction: column;
+    display: flex;
+    gap: 10px;
+}
+
+.icon {
+    padding: 0.2rem;
+    width: 35px;
+    height: 35px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.graphs{
+    
+}
+
+.blue { background: #4a6efc; }
+.yellow { background: #ffcc00; }
+.blue-text { color: #4a6efc; }
+.yellow-text { color: #ffcc00; }
+
+.amount {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.label {
+    margin-top: -1.5rem;
+    font-size: 14px;
+}
+
+
+
+
+.small2 { grid-area: small2; min-height: 80px; }  
+.tall1  { grid-area: tall1; }
+.wide1  { grid-area: wide1; min-height: 120px; }
+.wide2  { grid-area: wide2; min-height: 120px; }
+.tall2  { grid-area: tall2; }
