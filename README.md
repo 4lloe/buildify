@@ -44,3 +44,6 @@ cd buildify
 
 Автор: **4lloe**  
 GitHub: [https://github.com/4lloe](https://github.com/4lloe)
+
+
+![Image alt](https://github.com/4lloe/Images/blob/main/photo_2025-04-07_18-09-50.jpg)
