@@ -31,25 +31,6 @@ cd buildify
 
 Відкрийте `index.html` у вашому браузері, щоб переглянути шаблон.
 
-## 🧩 Usage
-
-- Змініть вміст HTML-файлів відповідно до вашого бренду.
-- За потреби змініть стилі у файлі `css/style.css`.
-- Додайте інтерактивність у `js/script.js`.
-
-## 📁 Project Structure
-
-```
-buildify/
-├── index.html          # Основний HTML-файл
-├── css/
-│   └── style.css       # Таблиця стилів
-├── js/
-│   └── script.js       # JavaScript функціональність
-└── assets/
-    ├── images/         # Зображення
-    └── icons/          # Іконки
-```
 
 ## 🤝 Contributing
 
